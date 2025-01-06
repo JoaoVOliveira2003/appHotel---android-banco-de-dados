@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título Geral -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotel Tads"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Campo Nome do Hóspede -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hóspede"
+        android:textSize="16sp" />
+    <!-- Rótulo para o campo de nome do hóspede -->
+
+    <EditText
+        android:id="@+id/editHospede"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Hóspede" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quarto"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerQuarto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dias de Hospedagem"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de dias"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forma de Pagamento e Opção de Café"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crédito" />
+
+        <RadioButton
+            android:id="@+id/radioDebito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débito" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btnAtualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Atualizar" />
+
+        <Button
+            android:id="@+id/btnDeletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deletar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewHospedes"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HotelApp</string>
+    <string name="hint_hospede">Nome do Hóspede</string>
+    <string name="label_quarto">Quarto</string>
+    <string name="label_dias_hospedagem">Dias de Hospedagem</string>
+    <string name="label_pagamento">Forma de Pagamento</string>
+    <string name="label_cafe">Café</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_atualizar">Atualizar</string>
+    <string name="btn_deletar">Deletar</string>
+    <string name="erro_campos">Preencha todos os campos!</string>
+    <string name="sucesso_salvar">Hóspede salvo!</string>
+    <string name="erro_salvar">Erro ao salvar!</string>
+    <string name="sucesso_atualizar">Hóspede atualizado!</string>
+    <string name="erro_atualizar">Erro ao atualizar!</string>
+    <string name="sucesso_deletar">Hóspede deletado!</string>
+    <string name="erro_deletar">Erro ao deletar!</string>
+    <string name="selecione_hospede">Selecione um hóspede para atualizar!</string>
+    <string name="deletar_hospede">Selecione um hóspede para deletar!</string>
+
+    <!-- Array para os quartos -->
+    <string-array name="quartos">
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+</resources>
